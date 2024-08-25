@@ -40,6 +40,7 @@
   onMount(() => {
     newQuestion();
     document.documentElement.classList.toggle('is-dark', isDarkMode);
+    document.documentElement.classList.toggle('is-light', !isDarkMode);
   });
 </script>
 
@@ -102,6 +103,19 @@
 
   :global(.is-dark button:hover) {
     background-color: #444;
+  }
+
+  :global(.is-light) {
+    background-color: #d5bd8d;
+    color: #333;
+  }
+
+  :global(.is-light input),
+  :global(.is-light button) {
+    background-color: #c8a96b;
+    color: #333;
+    border: 1px solid #b99d64;
+    box-shadow: 0 0 5px #816c41;
   }
 
   main {
