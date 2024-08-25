@@ -1,38 +1,47 @@
-# create-svelte
+# 🐧 Svelte Linux File Mode Practice
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Welcome to **Svelte Linux File Mode Practice**! This is a fun web app built with [Svelte](https://svelte.dev) that helps you practice and master Linux file permissions. Whether you're a beginner or just want to brush up on your skills, this app is designed to make learning file modes enjoyable.
 
-## Creating a project
+## ✨ Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Interactive Practice:** Translate between symbolic (e.g., `rwxr-xr--`) and numeric (e.g., `755`) Linux file modes.
+- **Random Questions:** Test yourself with random questions to keep your skills sharp.
+- **Immediate Feedback:** Get instant feedback on your answers.
+- **Simple and Lightweight:** Built with Svelte for a fast and responsive user experience.
+- **Dark/Light theme switch**
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have the latest [Node.js](https://nodejs.org/) and pnpm installed on your machine.
+
+### Installation
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/your-username/svelte-linux-file-mode-app.git
+    cd svelte-linux-file-mode-app
+    ```
+
+2. **Install dependencies:**
+
+    ```bash
+    pnpm install
+    ```
+
+3. **Run the development server:**
+
+    ```bash
+    pnpm run dev
+    ```
+
+    Your app should now be running on [http://localhost:5173](http://localhost:5173) 🚀.
+
+### Building for Production
+
+To create an optimized build of your app, run:
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+pnpm run build
